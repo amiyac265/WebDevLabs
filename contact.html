@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../static/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Amiya">
+    <meta name="keywords" content="Carnegie Mellon University, Information Systems">
+    <meta name="description" content="Amiya professional website">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../static/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Amiya</title>
+</head>
+<body onload= "addYear()">
+    <header>
+        <h1 id="webname">Amiya Chokhawala</h1>
+        <nav id="myTopnav" class="topnav">
+            <a href="index.html">Home</a>
+            <a href="cv.html">CV</a>
+            <a href="contact.html" class="active">Contact me</a>
+            <a href="fun.html">For fun</a>
+            <a href="javascript:void(0);" class="icon" >
+                <i class="fa fa-bars"></i>
+             </a>
+        </nav>
+    </header>
+    <div class="main">
+        <h2>Contact Me</h2>
+        <form action="">
+            <label for="UserName">Your name (required): </label>
+            <input type="text" name="UserName" id="UserName" required>
+            <label for="UserEmail">Your email (required): </label>
+            <input type="email" name="UserEmail" id="UserEmail" required>
+            <label for="UserText">Your text (required): </label>
+            <textarea name="UserText" id="UserText" cols="30" rows="10" required></textarea>
+            <input type="submit" value="Send" onclick="validate()">
+        </form>
+        <p id="ValidateMsg"></p>
+        <br> 
+        <table>
+            <tr><th>Contact Method</th><th>Description</th></tr>
+            <tr><td>Email</td><td>achokhaw@andrew.cmu.edu</td></tr>
+            <tr><td>Phone</td><td>650-224-0733</td></tr>
+            <tr><td>Linkedin</td><td>www.linkedin.com/in/amiya-chokhawala</td></tr>
+        </table>
+    </div>
+    <footer>
+        <p id="copyYear">Amiya &copy</p>
+    </footer>
+    
+</body>
+</html>
